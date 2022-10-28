@@ -10,6 +10,7 @@ namespace WishList.Data
 {
     public class ApplicationDbContext : DbContext
     {
+        //Dbset = list of rows / table, here Items[0] represents first row
         public DbSet<Item> Items { get; set; }
         public ApplicationDbContext(DbContextOptions options): base(options)
         {
